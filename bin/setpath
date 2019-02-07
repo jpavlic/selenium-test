@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var path = require('path'),
+    os   = require('os'),
+    fs   = require('fs'),
+    home = process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'],
+    dir  = path.resolve(path.join(__dirname, '..'));
